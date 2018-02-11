@@ -1,9 +1,9 @@
-baseURL = "http://ceedon.github.io/blog/"
+# baseURL = "http://ceedon.github.io/"
 languageCode = "en-us"
 title = "ceedon.io"
 theme = "hyde"
 metaDataFormat = "toml"
-publishDir = "docs"
+# publishDir = "docs"
 
 [params]
   description = "Bait for the Distractable"
