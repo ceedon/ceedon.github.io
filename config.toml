@@ -1,0 +1,21 @@
+baseURL = "http://ceedon.github.io/blog/"
+languageCode = "en-us"
+title = "ceedon.io"
+theme = "hyde"
+metaDataFormat = "toml"
+publishDir = "docs"
+
+[params]
+  description = "Bait for the Distractable"
+
+[taxonomies]
+tag = "tags"
+category = "categories"
+plane = "planes"
+heavenly_body = "heavenly_bodies"
+continent = "continents"
+region = "regions"
+locale = "locales"
+place = "places"
+entity = "entities"
+org = "orgs"
