@@ -1,3 +1,4 @@
-name: "Chris Donnelly"
+name: "ceedon.io"
 markdown: "kramdown"
 timezone: "America/New_York"
+collections_dir: "collections"
