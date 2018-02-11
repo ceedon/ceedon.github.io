@@ -3,7 +3,6 @@ title:        "Hello, World!"
 description:  "A more literal hello world than those to which you may be familiar"
 date: 2015-01-14
 tags: "europe"
-
 ---
 
 A new incarnation of a blog, a vacation in Europe, a sea-change in work and life upon return: this post is the herald of all of these things.
