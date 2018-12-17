@@ -6,9 +6,10 @@ category: "blog"
 tags: ["growth","systems","communication","efficacy"]
 
 ---
-Headcount growth kills companies.
+More often than any other factor, headcount growth kills companies.
 
-Groups of people have advantage over individuals because they can do more work with better insights and fewer failures.
+The assumption of the status quo: Groups of people have advantage over individuals because they can do more work with better insights and fewer failures.
+
 There are a ton of assumptions baked into this supposition.
 - Everyone is working to a common goal.
 - All individuals have input.
