@@ -6,8 +6,6 @@ category: "blog"
 tags: ["growth","systems","communication","efficacy"]
 
 ---
-## Work in Progress; at me if you have feedback! Twitter link is at bottom of page.
-
 Headcount growth kills companies.
 
 Groups of people have advantage over individuals because they can do more work with better insights and fewer failures.
