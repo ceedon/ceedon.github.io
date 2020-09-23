@@ -7,7 +7,7 @@ tags: ["liberating structures", "ecocycle", "ego"]
 
 ---
 
-I spend a lot of time talking about systems for someone who doesn't treat himself like he's part of one. Maybe it's my upbringing with it's lack of acknowledgement of emotions. Maybe it's straight pride. Hard to say. Whatever it is, I haven't been acknowledging where I'm at and where I have and _don't have_ agency to improve that. This creates a whole bunch of stress, irrationality, and wasted energy. Time to stop that, eh?
+I spend a lot of time talking about systems for someone who doesn't treat himself like he's part of one. Maybe it's my upbringing with its lack of acknowledgement of emotions. Maybe it's straight pride. Hard to say. Whatever it is, I haven't been acknowledging where I'm at and where I have and _don't have_ agency to improve that. This creates a whole bunch of stress, irrationality, and wasted energy. Time to stop that, eh?
 
 I co-facilitated a workshop using [Ecocycle Planning](http://www.liberatingstructures.com/31-ecocycle-planning/) from [Liberating Structures](http://www.liberatingstructures.com/) last week.
 One of the things we spent a lot of time talking about are the traps on either side. In the *Poverty Trap* live things which you've given lipservice to, but are failing to thrive. In the *Rigidity Trap* live things which are past their use-by dates—things which no longer meet their contextual needs.
