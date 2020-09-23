@@ -23,7 +23,7 @@ We cover a synopsis of each topic then open up for voting.
 Voting is simple.
 
 Everyone votes concurrently.
-You drag the card down the course on tick for each vote you want to cast.
+You drag a card across the course one tick/column for each vote you want to cast.
 
 ![Cards being advanced horizontally](/images/derby-vote.png)
 
