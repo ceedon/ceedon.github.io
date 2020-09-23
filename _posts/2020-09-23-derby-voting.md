@@ -28,7 +28,9 @@ You drag the card down the course on tick for each vote you want to cast.
 ![Cards being advanced horizontally](/images/derby-vote.png)
 
 On tools like Miro, Mural, etc. the visual indication of an individual' pointer provides enough of a clue to prevent tugs of war around cards.
+
 The result is an interesting "race" of topics to the fore.
+
 Added bonus for the facilitator: the cards are naturally stack ranked once you compress the columns vertically.
 
 ![Cards arranged in order of most votes to least; right to left, top to bottom](/images/derby-vote.png)
