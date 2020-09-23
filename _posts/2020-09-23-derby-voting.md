@@ -31,9 +31,10 @@ On tools like Miro, Mural, etc. the visual indication of an individual' pointer 
 
 The result is an interesting "race" of topics to the fore.
 
+![Cards arranged in order of most votes to least; right to left, top to bottom](/images/derby-vote.png)
+
 Added bonus for the facilitator: the cards are naturally stack ranked once you compress the columns vertically.
 
-![Cards arranged in order of most votes to least; right to left, top to bottom](/images/derby-vote.png)
 ![Arrangement compressed](/images/derby-stack.png)
 
 To give it a little flair, you can create a finish line with some black boxes!
