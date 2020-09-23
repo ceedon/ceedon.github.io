@@ -8,7 +8,7 @@ tags: ["leancoffee", "facilitation"]
 ---
 
 In this COVID'y world, I find I lack feedback I'm accustomed to while facilitating.
-A small example of this is the natural reinforcement that occur as folks see others inspect and vote on cards when running LeanCoffees.
+A small example of this is the natural reinforcement that occurs as folks see others inspect and vote on cards during LeanCoffees.
 
 As a result, I've been doing something I call Derby voting.
 
