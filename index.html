@@ -1,18 +1,16 @@
 ---
-layout: default
+title: Home
 ---
 
-<div class="posts">
-  {% for post in site.posts %}
-    <article class="post">
+<h2>Welcome</h2>
 
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+<img src="/images/haskell-logo.png" style="float: right; margin: 10px;" />
 
-      <div class="entry">
-        {{ post.excerpt }}
-      </div>
+<p>Welcome to my blog!</p>
 
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-    </article>
-  {% endfor %}
-</div>
+<p>I've reproduced a list of recent posts here for your reading pleasure:</p>
+
+<h2>Posts</h2>
+$partial("templates/post-list.html")$
+
+<p>…or you can find more in the <a href="/archive.html">archives</a>.</p>
