@@ -1,5 +1,6 @@
 ---
 title:        "The Enemy of Good"
+author: "Chris Donnelly"
 description:  "Habits, traps, and YOU!"
 date: 2018-10-13
 category: "blog"
