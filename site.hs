@@ -1,15 +1,18 @@
---------------------------------------------------------------------------------
+----------------------------------------------
 {-# LANGUAGE OverloadedStrings #-}
 import           Data.Monoid (mappend)
 import           Hakyll
 
 
---------------------------------------------------------------------------------
-destinationDirectory = "../docs"
---------------------------------------------------------------------------------
+----------------------------------------------
+config :: Configuration
+config = defaultConfiguration
+    { destinationDirectory  = "docs" }
+
+----------------------------------------------
 
 main :: IO ()
-main = hakyll $ do
+main = hakyllWith config $ do
     match "images/*" $ do
         route   idRoute
         compile copyFileCompiler
