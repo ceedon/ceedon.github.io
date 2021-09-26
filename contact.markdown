@@ -2,5 +2,5 @@
 title: Contact
 ---
 
-I live in a small hut in the mountains of Kumano Kodō on Kii Hantō and would not
-like to be contacted.
+- [On Twitter](https://twitter.com/distractable)
+- [Or LinkedIn](https://linkedin.com/in/ceedon)
