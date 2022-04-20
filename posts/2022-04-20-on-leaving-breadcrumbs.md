@@ -2,7 +2,7 @@
 title: "On Leaving Breadcrumbs"
 author: "Chris Donnelly"
 description: "What to do when creating the conditions for skill to atrophy is desirable"
-date: 2020-09-23
+date: 2022-04-20
 category: "blog"
 tags: ["technology", "sociology", "ecology", "social practice theory"]
 ---
