@@ -1,14 +1,14 @@
 html {
-  font-size: 62.5%;
+  background-color: #444;
 }
 
 body {
-  font-size: 1.6rem;
-  color: #000;
+  font-size: 1rem;
+  color: #fff;
 }
 
 header {
-  border-bottom: 0.2rem solid #000;
+  border-bottom: 0.2rem solid #ccc;
 }
 
 nav {
@@ -16,9 +16,9 @@ nav {
 }
 
 nav a {
-  font-size: 1.8rem;
+  font-size: 1rem;
   font-weight: bold;
-  color: black;
+  color: #ccc;
   text-decoration: none;
   text-transform: uppercase;
 }
@@ -26,7 +26,7 @@ nav a {
 footer {
   margin-top: 3rem;
   padding: 1.2rem 0;
-  border-top: 0.2rem solid #000;
+  border-top: 0.2rem solid #ccc;
   font-size: 1.2rem;
   color: #555;
 }
@@ -39,15 +39,19 @@ h2 {
   font-size: 2rem;
 }
 
+a {
+  color: rgb(205, 82, 0);
+}
+
 article .header {
   font-size: 1.4rem;
   font-style: italic;
-  color: #555;
+  color: #fff;
 }
 
 .logo a {
   font-weight: bold;
-  color: #000;
+  color: #fff;
   text-decoration: none;
 }
 
@@ -76,7 +80,7 @@ article .header {
   }
   nav a {
     display: block;
-    line-height: 1.6;
+    line-height: 2;
   }
 }
 
@@ -105,13 +109,13 @@ article .header {
   }
   nav a {
     display: inline;
-    margin: 0 0.6rem;
+    margin: 0 0.4rem;
   }
 }
 
 @media (min-width: 640px) {
   body {
-    width: 60rem;
+    width: 40rem;
     margin: 0 auto;
     padding: 0;
   }
