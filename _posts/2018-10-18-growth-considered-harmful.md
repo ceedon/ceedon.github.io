@@ -4,7 +4,7 @@ title:        "Growth Considered Harmful"
 author:       "Chris Donnelly"
 description:  "Trade-offs, discipline, and ego related to growing a business"
 date:         2018-10-18
-category:     "blog"
+category:     "post"
 tags:         ["growth","systems","communication","efficacy"]
 
 ---

@@ -4,7 +4,7 @@ title:        "Derby Voting"
 author:       "Chris Donnelly"
 description:  "Interactive Voting for Isolated Times"
 date:         2020-09-23
-category:     "blog"
+category:     "post"
 tags:         ["leancoffee", "facilitation"]
 
 ---
