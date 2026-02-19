@@ -127,6 +127,7 @@ table {
 body {
     font-family: "Nunito", sans-serif;
     font-size: 2rem;
+    font-weight: bold;
     line-height: 1.7;
 }
 
@@ -161,7 +162,7 @@ i {
 }
 strong,
 b {
-    font-weight: bold;
+    font-weight: bolder;
 }
 small {
     font-size: 0.85em;
