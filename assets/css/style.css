@@ -176,7 +176,7 @@ sub {
 }
 
 code {
-    font-family: "Noto Sans Mono", monospace;
+    font-family: "Noto Mono", monospace;
 }
 
 blockquote {
