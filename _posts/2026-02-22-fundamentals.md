@@ -4,7 +4,7 @@ author: "Chris Donnelly"
 description: "Legibility in the (spread)sheets; doom on the streets"
 date: 2026-02-22
 category: post
-tags: ["sociology", "management", "business", "finance"]
+tags: ["sociology", "management", "business", "finance", "AI"]
 ---
 
 ## We've lost our way as a people.
