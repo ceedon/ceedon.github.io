@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "On Leaving Breadcrumbs"
 author: "Chris Donnelly"
 description: "What to do when creating the conditions for skill to atrophy is desirable"
@@ -25,7 +24,7 @@ When we say automation we're talking about "stuff". We're defining "stuff", mate
 Back to my pairing session:
 This script was about what you'd expect from someone jamming out a solution to the problem at hand with the belief that they'd come back to it to refine later when later never came. Compeletly inscrutable. Grown, not designed. Undocumented. No breadcrumbs for anyone to follow. As a result, the skill of the creator has been lost to time. This is the crux of legacy code. Stuff from which we can't recover skill.
 
-Stuff causes skill to atrophy. Maybe not our skill. Maybe the skill of the people the people using the stuff we cast off. We should care about documentation in its very many forms for its ability to provide a trail for others to (re)build skill. Too often we learn that the other is future us, so be selfish; you'll come to the same place. We need to help those who come after recover the skill we used to craft our stuff.
+Stuff causes skill to atrophy. Maybe not our skill, but the skill of the people using the stuff we cast off. We should care about documentation in its very many forms for its ability to provide a trail for others to (re)build skill. Too often we learn that the other is future us, so be selfish; you'll come to the same place. We need to help those who come after recover the skill we used to craft our stuff.
 
 Alan Cooper's [thoughts on pairing](https://twitter.com/MrAlanCooper/status/1060553914209071106) apply to leaving breadcrumbs:
 

@@ -1,5 +1,4 @@
 ---
-layout:       post
 title:        "Derby Voting"
 author:       "Chris Donnelly"
 description:  "Interactive Voting for Isolated Times"

@@ -1,0 +1,474 @@
+/* ============================================
+     GRUNGE BAUHAUS — Blog Theme v2
+     Flexbox-first fluid layout
+     ============================================ */
+
+:root {
+    /* Surface — cool concrete */
+    --bg: #e4e7eb; /* cool grey paper */
+    --bg-dark: #141619; /* blue-black */
+    --bg-card: #d8dce1; /* slightly darker cool grey */
+    --bg-code: #cdd2d8;
+    /* Text — cool slate */
+    --ink: #141619; /* near black, blue tint */
+    --ink-mid: #3d4550; /* slate */
+    --ink-light: #727d8a; /* cool medium grey */
+    --ink-on-dark: #e4e7eb;
+    /* Accent — neon orange */
+    --accent: #ff6b1a; /* neon orange */
+    --accent-light: #ff8c4a;
+    --ochre: #c49a2a;
+    --steel: #5a6872;
+    --sp-xs: 0.25rem;
+    --sp-s: 0.5rem;
+    --sp-m: 1rem;
+    --sp-l: 1.5rem;
+    --sp-xl: 2.5rem;
+    --sp-2xl: 4rem;
+    --sp-3xl: 6rem;
+    --gutter: clamp(1.25rem, 3vw, 3rem);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* ---- NOISE ---- */
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    pointer-events: none;
+    opacity: 0.06;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+    background-repeat: repeat;
+    background-size: 256px 256px;
+}
+
+/* ---- BASE ---- */
+html {
+    font-size: 17px;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Work Sans", sans-serif;
+    font-weight: 400;
+    line-height: 1.7;
+    color: var(--ink);
+    background: var(--bg);
+    -webkit-font-smoothing: antialiased;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ---- TYPOGRAPHY ---- */
+h1,
+h2,
+h3,
+h4 {
+    font-family: "Rangile", serif;
+    font-weight: 400;
+    line-height: 1.05;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+}
+h1 {
+    font-size: clamp(2.4rem, 5vw, 4.5rem);
+}
+h2 {
+    font-size: clamp(1.4rem, 2.5vw, 2rem);
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.75;
+}
+
+a {
+    color: var(--accent);
+    text-decoration: none;
+    border-bottom: 1.5px solid transparent;
+    transition: border-color 0.2s ease;
+}
+a:hover {
+    border-bottom-color: var(--accent);
+}
+
+code,
+.mono {
+    font-family: "Inconsolata", monospace;
+    font-size: 0.9em;
+}
+
+/* ---- RULES ---- */
+.rule {
+    border: none;
+    height: 3px;
+    background: var(--ink);
+}
+.rule--thin {
+    border: none;
+    height: 1px;
+    background: var(--ink-light);
+}
+.rule--accent {
+    border: none;
+    height: 4px;
+    background: var(--accent);
+}
+
+/* ============================================
+     HEADER — full bleed
+     ============================================ */
+.site-header {
+    padding: var(--sp-l) var(--gutter) var(--sp-m);
+}
+.site-header .rule {
+    margin-bottom: var(--sp-m);
+}
+
+.site-header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: var(--sp-m);
+}
+
+.site-logo {
+    font-family: "Rangile", serif;
+    font-size: 1.3rem;
+    letter-spacing: 0.15em;
+    color: var(--ink);
+    text-decoration: none;
+    border-bottom: none;
+    position: relative;
+}
+.site-logo::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: var(--accent);
+}
+
+.site-nav {
+    display: flex;
+    gap: var(--sp-l);
+    list-style: none;
+}
+.site-nav a {
+    font-family: "Inconsolata", monospace;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--ink-mid);
+    border-bottom: none;
+    transition: color 0.2s ease;
+}
+.site-nav a:hover {
+    color: var(--accent);
+}
+
+/* ============================================
+     MAIN LAYOUT — flexbox split
+     On wide screens: article left, archive sidebar right
+     On narrow: stacked
+     ============================================ */
+.page-body {
+    display: flex;
+    flex: 1;
+    gap: 0;
+}
+
+/* Article column — takes available space */
+.article-col {
+    flex: 1 1 0;
+    min-width: 0;
+    padding: var(--sp-2xl) var(--gutter) var(--sp-3xl);
+    border-right: 1px solid var(--ink-light);
+}
+
+/* Sidebar / archive column */
+.archive-col {
+    flex: 0 0 clamp(280px, 30vw, 420px);
+    padding: var(--sp-2xl) var(--gutter) var(--sp-3xl);
+    position: sticky;
+    top: 0;
+    align-self: flex-start;
+    max-height: 100vh;
+    overflow-y: auto;
+}
+
+/* ============================================
+     FEATURED ARTICLE (in article-col)
+     ============================================ */
+.featured__meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--sp-s);
+    font-family: "Inconsolata", monospace;
+    font-size: 0.8rem;
+    color: var(--ink-light);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: var(--sp-l);
+}
+
+.featured__title {
+    animation: fadeUp 0.5s ease both;
+}
+
+/* ---- Post body content ---- */
+.post-body {
+    display: flex;
+    flex-direction: column;
+    gap: var(--sp-m);
+    margin-top: var(--sp-xl);
+}
+
+.post-body p {
+    color: var(--ink-mid);
+}
+.post-body p:first-child {
+    font-size: 1.15rem;
+    font-weight: 300;
+    line-height: 1.8;
+    color: var(--ink);
+}
+
+.post-body h2 {
+    margin-top: var(--sp-l);
+    font-size: 1.3rem;
+    color: var(--ink);
+}
+
+.post-body blockquote {
+    border-left: 4px solid var(--accent);
+    padding: var(--sp-l) var(--sp-xl);
+    background: rgba(255, 107, 26, 0.06);
+    font-style: italic;
+    font-weight: 300;
+    font-size: 1.15rem;
+    color: var(--ink);
+}
+
+.post-body pre {
+    background: var(--bg-dark);
+    color: var(--ink-on-dark);
+    padding: var(--sp-l);
+    overflow-x: auto;
+    font-family: "Inconsolata", monospace;
+    font-size: 0.85rem;
+    line-height: 1.6;
+    border-left: 3px solid var(--accent);
+}
+
+.post-body ul {
+    padding-left: var(--sp-l);
+    color: var(--ink-mid);
+}
+.post-body li {
+    margin-bottom: var(--sp-s);
+    line-height: 1.6;
+}
+.post-body li::marker {
+    color: var(--accent);
+    font-weight: 700;
+}
+
+.post-body code:not(pre code) {
+    background: var(--bg-code);
+    padding: 2px 6px;
+    font-size: 0.85em;
+}
+
+/* ============================================
+     ARCHIVE LIST (in sidebar)
+     ============================================ */
+.archive__label {
+    font-family: "Inconsolata", monospace;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: var(--ink-light);
+    margin-bottom: var(--sp-l);
+}
+
+.post-item {
+    display: flex;
+    gap: var(--sp-m);
+    align-items: baseline;
+    padding: var(--sp-m) 0;
+    border-top: 1px solid var(--ink-light);
+    cursor: pointer;
+    transition: background 0.15s ease;
+    animation: fadeUp 0.4s ease both;
+}
+.post-item:hover {
+    background: rgba(255, 107, 26, 0.06);
+}
+
+.post-item__index {
+    font-family: "Inconsolata", monospace;
+    font-size: 0.75rem;
+    color: var(--ink-light);
+    flex-shrink: 0;
+    min-width: 3ch;
+}
+
+.post-item__body {
+    flex: 1;
+    min-width: 0;
+}
+
+.post-item__title {
+    font-family: "Rangile", serif;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.01em;
+    line-height: 1.2;
+    color: var(--ink);
+}
+.post-item:hover .post-item__title {
+    color: var(--accent);
+}
+
+.post-item__date {
+    font-family: "Inconsolata", monospace;
+    font-size: 0.7rem;
+    color: var(--ink-light);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-top: var(--sp-xs);
+}
+
+.post-item__tag {
+    display: inline-block;
+    margin-left: var(--sp-s);
+    padding: 1px 5px;
+    background: var(--bg-code);
+    font-family: "Inconsolata", monospace;
+    font-size: 0.65rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.post-item:nth-child(1) {
+    animation-delay: 0.05s;
+}
+.post-item:nth-child(2) {
+    animation-delay: 0.1s;
+}
+.post-item:nth-child(3) {
+    animation-delay: 0.15s;
+}
+.post-item:nth-child(4) {
+    animation-delay: 0.2s;
+}
+.post-item:nth-child(5) {
+    animation-delay: 0.25s;
+}
+
+/* ============================================
+     FOOTER
+     ============================================ */
+.site-footer {
+    padding: var(--sp-l) var(--gutter);
+}
+.site-footer__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: var(--sp-m);
+    font-family: "Inconsolata", monospace;
+    font-size: 0.75rem;
+    color: var(--ink-light);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    padding-top: var(--sp-m);
+}
+
+/* ============================================
+     VIEW SWITCHER
+     ============================================ */
+.view-switch button {
+    font-family: "Inconsolata", monospace;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    padding: 0;
+    border: none;
+    background: none;
+    color: var(--ink-mid);
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+.view-switch button:hover {
+    color: var(--accent);
+}
+
+/* ============================================
+     DARK MODE
+     ============================================ */
+body.dark {
+    --bg: #0e1117; /* deep blue-black */
+    --bg-dark: #080a0e;
+    --bg-card: #161b22;
+    --bg-code: #1c2129;
+    --ink: #c9d1d9; /* cool light grey */
+    --ink-mid: #8b949e; /* muted cool grey */
+    --ink-light: #484f58; /* dim grey */
+    --ink-on-dark: #c9d1d9;
+    --accent: #ff6b1a; /* neon orange stays hot */
+    --accent-light: #ff8c4a;
+}
+body.dark::before {
+    opacity: 0.035;
+}
+body.dark img {
+    filter: invert(1);
+}
+/* ============================================
+     RESPONSIVE — stack on narrow
+     ============================================ */
+@media (max-width: 860px) {
+    .page-body {
+        flex-direction: column;
+    }
+    .article-col {
+        border-right: none;
+        border-bottom: 1px solid var(--ink-light);
+        padding-bottom: var(--sp-xl);
+    }
+    .archive-col {
+        flex: none;
+        position: static;
+        max-height: none;
+        overflow-y: visible;
+    }
+}
+
+/* ============================================
+     ANIMATIONS
+     ============================================ */
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(12px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

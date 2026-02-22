@@ -1,5 +1,4 @@
 ---
-layout:       post
 title:        "Growth Considered Harmful"
 author:       "Chris Donnelly"
 description:  "Trade-offs, discipline, and ego related to growing a business"

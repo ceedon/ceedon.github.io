@@ -1,11 +1,11 @@
 ---
-layout:       post
 title:        "The Enemy of Good"
 author:       "Chris Donnelly"
 description:  "Habits, traps, and YOU!"
 date:         2018-10-13
 category:     "post"
 tags:         ["liberating structures", "ecocycle", "ego"]
+read_time:    "2 min read"
 
 ---
 
