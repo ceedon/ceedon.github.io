@@ -1,4 +1,4 @@
-_build/dev/lib
+_build
 _site
 deps
 .elixir_ls
